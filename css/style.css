@@ -1,0 +1,176 @@
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e1becc;
+}
+
+/* HEADER */
+.header {
+    display: flex; /* THIS MAKE THE HEADER DISPLAY AS A FLEX CONTAINER, e tapad niya */
+    justify-content: space-between; /* space in between of the elements in the header */
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #5aaa83;
+    gap: 30px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0; /* THIS PREVENTS THE LOGO FROM SHRINKING WHEN THE HEADER IS TOO SMALL */
+
+}
+
+.logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* THIS MAKE THE IMAGE FIT WITHIN ITS CONTAINER DILI E STRECH OR  CROP */
+    border-radius: 50%;
+}
+
+.logo h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    max-width: 370px;
+    margin: 0;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* flex-start(E ALIGN SA left), flex-end(E ALIGN SA right), center(E ALIGN SA center), space-between(E ADD SPACE BETWEEN ELEMENTS), space-around(E ADD SPACE AROUND EACH ELEMENT), space-evenly */
+    gap: 25px;
+}
+
+nav a {
+    color: #531414;
+    text-decoration: none; /* WALAON NIYA NAG UNDERLINE SA HREF */
+    font-size: 17px;
+    transition: 0.3s;
+    flex-shrink: 0;
+}
+
+nav a:hover {
+    color: #f0f0f0;
+}
+
+nav a:active {
+    color: green;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 100px 30px;
+    background-color: #f7e8dc;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: #315e3b;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+/* KEY FEATURES */
+.key {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+/* QUOTE IMAGE */
+.quote {
+    display: block; /* THIS MAKE THE IMAGE DISPLAY AS A BLOCK ELEMENT */
+    max-width: 50%;
+    height: auto;
+    margin: 20px auto;
+}
+
+section {
+    padding: 80px 50px;
+    text-align: center;
+} /*all section para ma center*/
+
+.hero {
+    background-color: #f7e8dc;
+    padding: 120px 30px;
+}
+
+/* ABOUT */
+.about {
+    background-color: #e1becc;
+}
+
+/* MENU */
+.menu {
+    background-color: #fff5ed;
+}
+
+/* SHOP */
+.shop {
+    background-color: #e1becc;
+}
+
+.note, .tote, .shirt, .slipper, .phonecase {
+    display: block; 
+    max-width: 50%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10%;
+}
+
+
+/* BENEFITS */
+.benefits {
+    background-color: #f7e8dc;
+}
+
+/* GALLERY */
+.gallery {
+    background-color: #e1becc;
+}
+
+/* PROMOTIONS */
+.promotions {
+    background-color: #fff5ed;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #e1becc;
+}
+
+/* CART */
+.cart {
+    background-color: #f7e8dc;
+}
+/* 
+display: flex;	Arranges elements in a row by default.
+display: block;	Places elements on separate lines.
+display: inline;	Places elements beside each other.
+display: inline-block;	Places elements beside each other while allowing width and height.
+display: grid;	Arranges elements in rows and columns.
+display: none;	Hides the element completely.
+
+flex-wrap: wrap;	Allows items to move to the next line.
+flex-wrap: nowrap;	Keeps items in one line (default).
+flex-wrap: wrap-reverse;	Allows wrapping in the reverse cross-axis direction.
+
+*/
